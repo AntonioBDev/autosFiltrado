@@ -1,0 +1,311 @@
+:root{
+    color-scheme: light dark;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 92.5%;
+}
+
+*,*:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+}
+
+/*Globales  */
+a{text-decoration: none;}
+h2{font-size: 3rem;}
+
+.container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* Utilidades*/ 
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+  @media (min-width:768px) {
+    .columns {
+        margin-left: 4%; }
+    .columns:first-child {
+            margin-left: 0; }
+    
+    .three.columns                  { width: 22%;          }
+    .four.columns                   { width: 30.6666666667%; }
+  }
+
+.row:after {
+  content: "";
+  display: flex ;
+  clear: both; 
+}
+
+
+/* Header */
+.video{
+    position: relative;
+    min-height: 30rem;
+    max-height: 60rem;
+    overflow: hidden;
+}
+.bg{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(38, 39, 34, 0.5);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.margin{
+    margin: 0 5rem;
+}
+
+.barra-bg{
+    /* background: rgba(27, 21, 21, 0.205); */
+    /* box-shadow: 0 8px 32px 0 rgba(33, 34, 39, 0.37); */
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+}
+
+.barra__contenido{
+  
+}
+
+.barra__nav h2{
+    padding: 1rem 2rem;
+    font-family: cursive;
+    color: rgb(218, 41, 41);
+    font-weight: 800;
+}
+
+.navegacion{
+    display: none;
+}
+
+@media (min-width:768px) {
+    .navegacion{
+        display: flex;
+        gap: 3rem;
+    }    
+}
+
+
+.navegacion .enlace{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 1rem 0;
+}
+
+.navegacion .enlace:hover{
+    border-bottom: 1px solid white;
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem; 
+}
+
+.ubicacion {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.ubicacion img {
+    width: 4rem;
+}
+
+
+video{
+    display: block;
+    width: auto;
+}
+
+@media (min-width:768px) {
+  
+video{
+    width: 100%;
+}
+}
+
+/* Main */
+
+.contenido__header{
+    margin: 2rem 0;
+}
+
+form {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+select:focus {
+    border: 1px solid #f03933;
+    outline: 0; 
+}
+
+select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box; }
+
+select{
+    margin:0 1rem  1.5rem 0;
+
+}
+/* Article */
+.carts{
+    display: grid;
+    grid-template-columns: repeat(1,25rem);
+    gap: 1rem;
+}
+@media (min-width:768px) {
+    .carts{
+        grid-template-columns: repeat(2,25rem);
+    }
+}
+@media (min-width:1200px) {
+    .carts{
+        grid-template-columns: repeat(3,25rem);
+    }
+}
+
+@media (min-width:1300px) {
+    .carts{
+        grid-template-columns: repeat(4,25rem);
+    }
+}
+.cart{
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.cart:hover {
+    transform: scale(1.1); /* Escala el carrito al 120% al pasar el ratón */
+    border: 1px solid white;
+    cursor: pointer;
+    z-index: 1;
+  }
+.imgC {
+    height: 30rem;
+    /* width: auto; */
+}
+#a1{
+    background-image: url(/src/img/img/Ferrari\ 296\ GTB.jpeg) ;
+}
+
+.grid-auto{
+    padding: 1rem 1rem 0 1rem;
+}
+
+footer{
+    margin-top: 2rem;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+}
+
+footer p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.ceroResultados{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 1rem ;
+    background-color: #f03933;
+}
+
+/* Blog */
+
+.blog{
+    margin: 2rem auto;
+}
+
+
+.blog img{
+    width: 100%;
+}
+
+@media (min-width:1200px) {
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .blog img{
+        grid-column: 2/3;
+    }
+    
+    .info__blog{
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .info__blog p:first-child{
+        margin-top: 0;
+    }
+}
+
+
