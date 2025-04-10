@@ -1,5 +1,5 @@
 :root{
-    color-scheme: light dark;
+    /* color-scheme: light dark; */
 }
 
 html{
@@ -94,20 +94,42 @@ h2{font-size: 3rem;}
     justify-content: space-between;
 }
 
+
 .margin{
     margin: 0 5rem;
 }
 
 .barra-bg{
-    /* background: rgba(27, 21, 21, 0.205); */
-    /* box-shadow: 0 8px 32px 0 rgba(33, 34, 39, 0.37); */
+    /* background: rgba(27, 21, 21, 0.205);
+    box-shadow: 0 8px 32px 0 rgba(33, 34, 39, 0.37); */
     backdrop-filter: blur( 3.5px );
     -webkit-backdrop-filter: blur( 3.5px );
 }
 
-.barra__contenido{
-  
+.sub-menu{
+    position: relative;
 }
+
+
+.sub-menu img{
+    width: 4rem;
+}
+
+.contenido-navegacion{
+    position: absolute;
+    right: 0;
+}
+
+.navegacion{
+    display: none;
+}
+
+@media (min-width:768px) {
+   .movil{
+    display: none;
+   }
+}
+
 
 .barra__nav h2{
     padding: 1rem 2rem;
@@ -116,9 +138,7 @@ h2{font-size: 3rem;}
     font-weight: 800;
 }
 
-.navegacion{
-    display: none;
-}
+
 
 @media (min-width:768px) {
     .navegacion{
